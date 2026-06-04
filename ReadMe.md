@@ -288,14 +288,14 @@ signedCert.pfx
 
 ## Përmbledhje komandash
 
-```bash
+```bash krijo private key
 openssl ecparam -name prime256v1 -genkey -noout -out private_key.pem
-
+```bash krijo request
 openssl req -new -sha256 -key private_key.pem -out request.csr -config csr.conf
-
+```bash kontrollo request
 openssl req -in request.csr -noout -text
-
+```bash kontrollo signedCert 
 openssl x509 -in signedCert.pem -noout -text
-
+```bash konverto nga signedCert.pem ne signedCert.pfx
 openssl pkcs12 -export -inkey private_key.pem -in signedCert.pem -out signedCert.pfx -password pass:ChangeMeStrongPassword1!
 ```
