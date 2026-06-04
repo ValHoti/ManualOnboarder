@@ -2,7 +2,7 @@
 
 Ky dokument shpjegon procedurën për krijimin e CSR request, marrjen e verification code nga ATK, dërgimin e CSR për nënshkrim, verifikimin e certifikatës dhe konvertimin në `.pfx`.
 
-> **Kujdes:** Ky README përdor vetëm të dhëna shembull/fake. Mos e ngarko në GitHub `private_key.pem`, `signedCert.pfx`, password-at, CSR/certifikata reale, NUI real, ose verification code real.
+> **Kujdes:** Keto te dhena jane te simuluara. filet `private_key.pem`, `signedCert.pfx`, password-at, CSR/certifikata reale, NUI real, ose verification code real.
 
 ---
 
